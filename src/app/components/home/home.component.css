@@ -1,0 +1,26 @@
+
+.section-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+}
+
+span{
+    color: grey;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+h1{
+    color: rgb(7, 60, 7);
+    font-size: 70px;
+    font-weight: 900;
+    font-family: fantasy;
+}
+
+@media(min-width: 1000px){
+    .main-section{
+        flex-direction: row;
+    }
+}
