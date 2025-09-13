@@ -1,0 +1,9 @@
+<button (click)="subimit()" [class]="'btn-' + variable" [disabled]="disabled
+ ">
+    <span *ngIf="!loadding">
+       {{btnText}}
+    </span>
+    <span *ngIf="loadding">
+        <h3>carregando.....</h3>
+    </span>
+</button>
