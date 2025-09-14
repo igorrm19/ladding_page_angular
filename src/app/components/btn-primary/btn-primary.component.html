@@ -1,9 +1,10 @@
-<button (click)="subimit()" [class]="'btn-' + variable" [disabled]="disabled
+<button [type]="type" (click)="Funcsubimit()" [class]="'btn' + variable" [disabled]="disabled
  ">
-    <span *ngIf="!loadding">
-       {{btnText}}
-    </span>
-    <span *ngIf="loadding">
+
+    @if(!loadding){
+        {{btnText}}
+    }@else if (loadding) {
         <h3>carregando.....</h3>
-    </span>
+    }
+    
 </button>

@@ -1,0 +1,42 @@
+.btnprimary {
+    color: aliceblue;
+    border: none;
+    border-radius: 30px;
+
+    cursor: pointer;
+
+    font-weight: bolder;
+    padding: 20px 40px;
+    font-size: 50px;
+
+
+    background-color: rgb(27, 92, 94);
+    font-size: 20px;
+
+    &:disabled {
+        opacity: 0.6;
+    }
+
+}
+
+
+.btnsecundary {
+    color: aliceblue;
+    border: none;
+    border-radius: 30px;
+
+    cursor: pointer;
+
+    font-weight: bolder;
+    padding: 20px 40px;
+    font-size: 50px;
+
+
+    background-color: rgb(34, 90, 186);
+    font-size: 16px;
+
+    &:disabled {
+        opacity: 0.6;
+    }
+
+}

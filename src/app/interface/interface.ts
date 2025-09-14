@@ -1,0 +1,3 @@
+interface newsLatterResponse {
+    mensagem: String
+}

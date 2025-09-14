@@ -1,13 +1,12 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
-import { NgIf } from "../../../../node_modules/@angular/common/index";
 
 type button = "primary" | "secundary"
-
+type buttonType = "submit" | "onClick"
 
 @Component({
   selector: 'app-btn-primary',
   standalone: true,
-  imports: [NgIf],
+  imports: [],
   templateUrl: './btn-primary.component.html',
   styleUrl: './btn-primary.component.css'
 })
@@ -15,12 +14,15 @@ type button = "primary" | "secundary"
 
 export class BtnPrimaryComponent {
   @Input("btn-text") btnText: String = ""; //semelhante a props 
-  @Output("subimit") onSubmit = new EventEmitter();
   @Input() disabled: Boolean = false;
   @Input() variable: button = "primary"
   @Input() loadding: Boolean = false;
+  @Input() type: buttonType = "submit"
 
-  subimit(){
-    this.onSubmit.emit()
+  @Output() submit = new EventEmitter<void>();
+
+  Funcsubimit(){
+    this.submit.emit()
+    console.log("funcionando 1")
   }
 }
