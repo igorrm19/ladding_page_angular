@@ -1,0 +1,10 @@
+<button [type]="type" (click)="Funcsubimit()" [class]="'btn' + variable" [disabled]="disabled
+ ">
+
+    @if(!loadding){
+        {{btnText}}
+    }@else if (loadding) {
+        <h3>carregando.....</h3>
+    }
+    
+</button>
