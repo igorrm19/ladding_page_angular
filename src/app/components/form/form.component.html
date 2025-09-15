@@ -1,20 +1,18 @@
 <section class="section-form">
 
     <div class="text">
-        <h1></h1>
-        <p></p>
+        <h1>Fique por dentro das tendencias</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales. Quisque sagittis orci ut diam condimentum, vel euismod erat placerat. In iaculis arcu eros, eget temp</p>
     </div>
 
     <form action="" [formGroup]="meuForm" (ngSubmit)="onSubmit()" >
         <label for="nome"></label>
-        <input id="nome" formControlName="nome" type="text">
+        <input id="nome" formControlName="nome" type="text" placeholder="Digiti seu nome">
 
         <label for="email"></label>
-        <input id="email" formControlName="email" type="text">
+        <input id="email" formControlName="email" type="text" placeholder="Digiti seu email">
 
         <app-btn-primary type="submit" [disabled]="!meuForm.valid"  variable="secundary" (submit)="onSubmit()"  [loadding]="loadding()" btn-text="enviar"></app-btn-primary>
     </form>
-    
-    <h1>{{ response }}</h1>
 
 </section>
