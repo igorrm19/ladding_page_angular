@@ -12,7 +12,7 @@ interface newsLatterResponse{
   providedIn: 'root'
 })
 export class NewsLatterService {
-  private endepointURL = "http://localhost:4200"
+  private endepointURL = "http://jsonplaceholder.typicode.com/posts"
 
   constructor(private http: HttpClient) {}
 

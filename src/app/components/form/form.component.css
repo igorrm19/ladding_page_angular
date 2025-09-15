@@ -5,3 +5,44 @@
 
     background-color: darkcyan;
 }
+
+
+form{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+input{
+    border: none;
+    border-bottom: 2px solid rgb(234, 229, 234);
+    background-color: transparent;
+    color: aliceblue;
+
+    transition: none;
+    animation: none;
+    outline: none;
+
+    width: 50%;
+    margin: 20px;
+    padding: 10px 10px 10px 0px;
+}
+
+.text{
+    width: 50%;
+
+    color: aliceblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+
+.text h1{
+    margin: 15px;
+}
+
+.text p{
+    margin: 15px;
+}
